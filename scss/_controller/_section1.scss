@@ -1,0 +1,79 @@
+%section1typography{
+    h2{
+        @include fontSans(2.1em ,400);
+    }
+    hr{opacity: 0.25;width: 95%;margin-left: 0;}
+    p, span{
+        @include fontSans(16px);
+        font-family: sans-serif;
+        opacity: 0.85;
+        line-height: 1.5em;
+        
+    }
+}
+
+@mixin sections() {
+    div.section-1{
+        @extend %spacinWarp;
+        
+        article{
+            float: left;
+            padding: $boxModelPadding;
+            width: 60%;
+            @extend %section1typography;
+            a{
+              @include btn();  
+            }
+        }
+        aside{
+            padding: $boxModelPadding;
+            width: 30%;
+            float: right;
+            @extend %section1typography;
+            a{
+                text-decoration: none;
+                color: $primaryColor;
+            }
+        }
+        
+    }
+    div.section-2{
+        @extend %spacinWarp;
+        div.box{
+             $grey: lighten(grey, 25%);
+            width: (100% - 7 ) / 3;
+            margin-right: 2.15%;
+            border: 1px solid $grey; 
+            /*height: 450px;*/
+            float: left;
+            border-radius: 5px;
+            div.bg{
+                width: 100%;
+                height: 225px;
+                background-color: $grey;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            div.text{
+                padding: 2% 6% 2% 6%;
+            }
+            h3{
+                @include fontSans(1.3em, 500);
+                margin-left: 1%;
+            }
+            @extend %section1typography;
+            div.btn{
+                padding: 6%;
+                border-top: 1px solid $grey;
+                background-color: lighten($grey, 22%);
+                a{
+                    @include btn($primaryColor, 3% ,16px, 3px);
+                }
+            }
+            
+        }
+        
+
+    }
+    
+}

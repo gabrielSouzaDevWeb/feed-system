@@ -1,0 +1,65 @@
+%inputStyle{
+    border: 2px solid lighten(blue, $amount: 20%);
+    border-radius: 10px;
+    @include fontSans(1.5em,400);
+    margin-bottom: 1em;
+    
+
+}
+@mixin feed(){
+    div.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lighten(blue, 25%);
+        padding-top: 4%;
+        padding-bottom: 2%;
+        div.feed-form{
+            
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                @include fontSans(2em,400);
+                padding-left: 2%;
+            }
+            input{
+                width: 90%;
+                @extend %inputStyle;
+            }
+            textarea{
+                width: 90.5%;
+                @extend %inputStyle;
+                height: 5em;
+                resize: none;
+            }
+            div.submit{
+                @include btn(green);
+                &:hover{
+                    cursor: pointer !important;
+                }
+            }
+        }
+        div.flex-item{
+            margin-top: 0.5em;
+            background-color: rgba(255,255,255,0.8);
+            width: 40%;
+            border: 1px solid lighten($color: blue, $amount: 15%);
+            border-radius: 3px;
+            h2{
+                @include fontSans(3em, 400);
+                line-height: 10px;
+               
+                padding: 0% 3% 0 4%
+            }
+            p{
+                @include fontSans(1.2em, 300);
+                //text-indent: 2em;
+                padding: 0% 3% 0 4%;
+            }
+            
+        }
+
+    }
+}
