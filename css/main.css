@@ -89,10 +89,14 @@ div.container {
       padding-left: 2%; }
     div.container div.feed-form input {
       width: 90%; }
+      div.container div.feed-form input:focus {
+        outline: 3px solid rgba(255, 255, 255, 0); }
     div.container div.feed-form textarea {
       width: 90.5%;
       height: 5em;
       resize: none; }
+      div.container div.feed-form textarea:focus {
+        outline: 3px solid rgba(255, 255, 255, 0); }
     div.container div.feed-form div.submit {
       text-decoration: none;
       background-color: green;

@@ -27,12 +27,20 @@
             input{
                 width: 90%;
                 @extend %inputStyle;
+                &:focus{
+                    outline: 3px solid rgba(255,255,255,0);
+                        
+                }
             }
             textarea{
                 width: 90.5%;
                 @extend %inputStyle;
                 height: 5em;
                 resize: none;
+                &:focus{
+                    outline: 3px solid rgba(255,255,255,0);
+                        
+                }
             }
             div.submit{
                 @include btn(green);
