@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="script/poster.js"></script>
-    <title>Document</title>
+    
+    <title>twitter</title>
 </head>
 <body>
     <nav>
@@ -27,9 +27,9 @@
         
         <div class="feed-form flex-item">
             <h1>No que você está pensando?</h1>
-            <input id="title" type="text" placeholder="title">
-            <textarea id="text" name="post" id="text" placeholder="Text"></textarea>
-            <div id="submit" class="submit">Postar</div>
+            <input id="title" type="text" placeholder="title" class="jsTitle">
+            <textarea id="text" name="post" id="text" placeholder="Text" class="jsText"></textarea>
+            <div id="submit" class="submit jsSubmit">Postar</div>
             &nbsp;
         </div>
     
@@ -40,5 +40,8 @@
         </div>
 
     </div>
+    <script src="script/controlls/feedController.js"></script>
+    <script src="script/feed.js"></script>
+    
 </body>
 </html>
