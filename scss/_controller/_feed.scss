@@ -56,8 +56,9 @@
             border: 1px solid lighten($color: blue, $amount: 15%);
             border-radius: 3px;
             h2{
-                @include fontSans(3em, 400);
-                line-height: 10px;
+                @include fontSans(2em, 400);
+                //line-height: 10px;
+                margin: 0.2em;
                
                 padding: 0% 3% 0 4%
             }

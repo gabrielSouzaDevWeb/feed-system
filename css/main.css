@@ -121,8 +121,8 @@ div.container {
     div.container div.flex-item h2 {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 400;
-      font-size: 3em;
-      line-height: 10px;
+      font-size: 2em;
+      margin: 0.2em;
       padding: 0% 3% 0 4%; }
     div.container div.flex-item p {
       font-family: 'Ubuntu', sans-serif;
