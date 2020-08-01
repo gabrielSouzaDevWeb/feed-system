@@ -112,6 +112,10 @@ div.container {
         cursor: pointer; }
       div.container div.feed-form div.submit:hover {
         cursor: pointer !important; }
+  div.container .feed {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; }
   div.container div.flex-item {
     margin-top: 0.5em;
     background-color: rgba(255, 255, 255, 0.8);

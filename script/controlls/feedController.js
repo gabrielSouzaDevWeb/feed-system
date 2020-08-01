@@ -17,7 +17,7 @@ class feedController{
             //this.createTags();
             //this.createTexts();
             this.createPost();
-            console.log(this._newPost);
+            
             
         });
 
