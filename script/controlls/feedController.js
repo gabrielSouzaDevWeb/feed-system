@@ -42,8 +42,13 @@ class feedController{
        this.addElements(this.newTitleH2(), this.boxTitle);
        this.addElements(this.newHr(), '');
        this.addElements(this.newTextP(), this.boxText);
+       this.clearTexts();
 
         
+    }
+
+    clearTexts(){
+        return this._boxTitle.value="", this._boxText.value='';
     }
     addElements(value, textValue){
         this._newPost.appendChild(value).innerHTML = textValue;
