@@ -3,7 +3,31 @@ class feedController{
     constructor(){
         this._boxTitle = document.querySelector(".jsTitle");
         this._boxText = document.querySelector(".jsText");
-        this._bottomPost = document.querySelector(".jsSubmit");
+        this.btnEvent();
+
+    }
+
+    btnEvent(){
+        let btnPost = document.querySelector(".jsSubmit");
+
+        btnPost.addEventListener('click',e=>{
+            this.createTags();
+            this.createTexts();
+
+        });
+
+    }
+
+   
+    createTags(){
+       let newPost= document.createElement('div');
+       let newTitle = document.createElement('h2');
+       let newHr= document.createElement('hr');
+       let newP= document.createElement('p');
+
+       //foreach\
+
+
 
     }
 
